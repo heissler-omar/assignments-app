@@ -1,0 +1,38 @@
+// .buttonToggleHome{
+//     width: 100% !important;
+//     height: 40px;
+//     border-radius: 0px !important;
+//     border-top: none;
+//     border-left: none;
+//     border-right: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// .buttonToggle{
+//     width: 100% !important;
+//     height: 40px;
+//     border-radius: 0px !important;
+//     border-top: none;
+//     border-left: none;
+//     border-right: none;
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+// }
+.home{
+    justify-content: center !important;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    border-bottom: #e7e7e7 solid 1px;
+    padding-left: 10px;
+    color: #353535;
+}
+.row:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
