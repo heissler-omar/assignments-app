@@ -12,4 +12,6 @@ export class Assg2Component implements OnInit {
   ngOnInit(): void {
   }
 
+  username = ''
+
 }

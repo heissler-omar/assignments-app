@@ -1,1 +1,26 @@
-<p>assg2 works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <br>
+            <h1>Practicing databinding</h1>
+            <ol>
+                <li>Add a input field wich updates a property ('username') via two-way-binding</li>
+                <li>Output de username property via String interpolation (in a paragraph below the input)</li>
+                <li>Add a button wich may only be clicked if the username is not an empty string</li>
+                <li>Upon clicking the button, the username should be reset to an empty string</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br>
+            <h3>Username:</h3>
+            <input type="text" class="form-control" [(ngModel)]="username">
+            <h3 class="userLabel">{{username}}</h3>
+            <button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset user</button>
+            <br>
+            <label class="comment">Para resolver el ejercicio se utilizó [(ngModel)]</label>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
