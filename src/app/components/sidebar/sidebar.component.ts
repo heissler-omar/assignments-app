@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {TooltipPosition} from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,5 +17,6 @@ export class SidebarComponent implements OnInit {
   navigateTo(route: any){
     this.router.navigate([route])
   }
+  positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
 
 }

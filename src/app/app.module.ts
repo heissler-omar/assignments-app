@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatRippleModule} from '@angular/material/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 /* Components: */
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { Assg1Component } from './pages/assg1/assg1.component';
 import { Assg2Component } from './pages/assg2/assg2.component';
 import { Assg3Component } from './pages/assg3/assg3.component';
+import { Assg4Component } from './pages/assg4/assg4.component';
+import { GameControlComponent } from './components/assg4/game-control/game-control.component';
+import { OddComponent } from './components/assg4/odd/odd.component';
+import { EvenComponent } from './components/assg4/even/even.component';
 
 
 @NgModule({
@@ -26,7 +31,11 @@ import { Assg3Component } from './pages/assg3/assg3.component';
     HomeComponent,
     Assg1Component,
     Assg2Component,
-    Assg3Component
+    Assg3Component,
+    Assg4Component,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +43,7 @@ import { Assg3Component } from './pages/assg3/assg3.component';
     BrowserAnimationsModule,
     MatButtonToggleModule,
     MatRippleModule,
+    MatTooltipModule,
     FormsModule
   ],
   providers: [],
