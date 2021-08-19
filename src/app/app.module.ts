@@ -18,9 +18,14 @@ import { Assg1Component } from './pages/assg1/assg1.component';
 import { Assg2Component } from './pages/assg2/assg2.component';
 import { Assg3Component } from './pages/assg3/assg3.component';
 import { Assg4Component } from './pages/assg4/assg4.component';
-import { GameControlComponent } from './components/assg4/game-control/game-control.component';
-import { OddComponent } from './components/assg4/odd/odd.component';
-import { EvenComponent } from './components/assg4/even/even.component';
+import { GameControlComponent } from './components/assg4-components/game-control/game-control.component';
+import { OddComponent } from './components/assg4-components/odd/odd.component';
+import { EvenComponent } from './components/assg4-components/even/even.component';
+import { Assg5Component } from './pages/assg5/assg5.component';
+import { ActiveUsersComponent } from './components/assg5-components/active-users/active-users.component';
+import { InactiveUsersComponent } from './components/assg5-components/inactive-users/inactive-users.component';
+import { UserService } from './services/users.service';
+import { CounterService } from './services/counter.service';
 
 
 @NgModule({
@@ -35,7 +40,10 @@ import { EvenComponent } from './components/assg4/even/even.component';
     Assg4Component,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    Assg5Component,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,7 @@ import { EvenComponent } from './components/assg4/even/even.component';
     MatTooltipModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UserService, CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
