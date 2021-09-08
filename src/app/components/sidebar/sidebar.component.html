@@ -3,13 +3,14 @@
     <mat-button-toggle class="buttonToggle" (click)="navigateTo('/assg1')">Assg1: Practicing components</mat-button-toggle>
     <mat-button-toggle class="buttonToggle">Assg1: Practicing</mat-button-toggle>
 </div> -->
-<div class="row home" (click)="navigateTo('/home')" matRipple>Home</div>
-<div class="row" (click)="navigateTo('/assg1')" matRipple>1. Practicing components</div>
-<div class="row" (click)="navigateTo('/assg2')" matRipple>2. Practicing databinding</div>
-<div class="row" (click)="navigateTo('/assg3')" matRipple>3. Practicing directives</div>
-<div class="row" (click)="navigateTo('/assg4')" matRipple
+<div class="row home" routerLink="/home" routerLinkActive="active" matRipple>Home</div>
+<div class="row" routerLink="/assg1" routerLinkActive="active" matRipple>1. Practicing components</div>
+<div class="row" routerLink="/assg2" routerLinkActive="active" matRipple>2. Practicing databinding</div>
+<div class="row" routerLink="/assg3" routerLinkActive="active" matRipple>3. Practicing directives</div>
+<div class="row" routerLink="/assg4" routerLinkActive="active" matRipple
                                                 matTooltip="Practicing property & event binding and view encapsulation"
                                                 [matTooltipPosition]="positionOptions[3]">
                                                 4. Practicing event binding...
 </div>
-<div class="row" (click)="navigateTo('/assg5')" matRipple>5. Practicing services</div>
+<div class="row" routerLink="/assg5" routerLinkActive="active" matRipple>5. Practicing services</div>
+<div class="row" routerLink="" routerLinkActive="" matRipple> 6. Practicing template-driven forms</div>
